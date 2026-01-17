@@ -1,9 +1,6 @@
 {
   "name": "project",
   "compatibility_date": "2026-01-17",
-  "assets": {
-    "directory": "./out"
-  },
   "pages_build_output_dir": "out"
 }
 
