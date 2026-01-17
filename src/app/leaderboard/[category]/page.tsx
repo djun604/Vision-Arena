@@ -18,6 +18,13 @@ const categoryNames: Record<string, string> = {
   "image-to-video": "Image-to-Video",
 }
 
+// 정적 사이트 생성을 위한 카테고리 목록 생성
+export function generateStaticParams() {
+  return Object.keys(categoryNames).map((category) => ({
+    category: category,
+  }))
+}
+
 export default function CategoryPage({ params }: CategoryPageProps) {
   const categoryName = categoryNames[params.category] || params.category
 
