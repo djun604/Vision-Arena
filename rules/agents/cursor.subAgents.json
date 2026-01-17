@@ -1,0 +1,228 @@
+{
+  "subAgents": [
+    "requirements-analyst",
+    "system-architect",
+    "python-expert",
+    "verification-agent",
+    "github-search-apply",
+    "frontend-scaffold-generator",
+    "database-architect",
+    "senior-code-reviewer",
+    "backend-code-generator",
+    "general-purpose",
+    "statusline-setup",
+    "output-style-setup",
+    "test-automation-agent",
+    "tool-configuration-agent",
+    "debugging-agent",
+    "environment-setup-agent",
+    "library-search-agent",
+    "component-finder-agent",
+    "solution-research-agent",
+    "ui-ux-validator-agent",
+    "server-management-agent",
+    "database-connection-agent",
+    "prompt-recommendation-agent",
+    "learning-coordinator-agent",
+    "machine-learning-agent",
+    "deep-learning-agent",
+    "data-analysis-agent",
+    "research-paper-agent",
+    "local-webview-exe-agent",
+    "unity-unreal-agent",
+    "vr-ar-development-agent",
+    "webxr-ai-integration-agent",
+    "api-development-integration-agent",
+    "rag-development-agent",
+    "chunk-development-agent",
+    "simulation-development-agent",
+    "mlops-development-agent",
+    "llmops-development-agent",
+    "browser-analysis-agent",
+    "image-analysis-agent",
+    "development-history-agent",
+    "bug-learning-agent",
+    "ocr-analysis-agent",
+    "layout-analytics-agent",
+    "embedded-vectorization-agent",
+    "knowledge-management-agent",
+    "context-aware-agent",
+    "image-generation-agent",
+    "code-safe-translation-agent",
+    "prd-erd-drd-management-agent",
+    "task-management-agent",
+    "admin-management-agent",
+    "member-management-agent",
+    "llm-api-key-management-agent",
+    "development-maintenance-agent",
+    "dependency-install-agent",
+    "log-storage-agent",
+    "time-series-prediction-agent",
+    "nlp-agent",
+    "tokenizer-agent",
+    "data-mesh-agent",
+    "sdk-analysis-agent",
+    "huggingface-benchmark-agent",
+    "gan-agent",
+    "reinforcement-learning-agent",
+    "dev-copywriter-agent",
+    "curriculum-authoring-agent",
+    "code-refactoring-agent",
+    "port-conflict-resolution-agent"
+  ],
+  "optimizedWorkflow": {
+    "enabled": true,
+    "tokenOptimization": {
+      "targetReduction": 43,
+      "simpleTaskReduction": 60,
+      "complexTaskReduction": 40,
+      "urgentTaskReduction": 30
+    },
+    "agentSelection": {
+      "autoSelect": true,
+      "keywordBased": true,
+      "complexityAssessment": true,
+      "maxAgents": 2
+    },
+    "mcpTools": {
+      "selectiveUsage": true,
+      "cachingEnabled": true,
+      "batchProcessing": true
+    }
+  },
+  "quickTriggers": {
+    "서브에이전트 이용": {
+      "description": "최적화된 서브에이전트 워크플로우 활성화",
+      "workflow": "auto-detect",
+      "optimization": "enabled"
+    },
+    "서브에이전트": {
+      "description": "서브에이전트 시스템 활성화",
+      "workflow": "auto-detect",
+      "optimization": "enabled"
+    },
+    "에이전트": {
+      "description": "에이전트 시스템 활성화",
+      "workflow": "auto-detect",
+      "optimization": "enabled"
+    }
+  },
+  "workflowMatrix": {
+    "simpleTasks": {
+      "frontend": {
+        "keywords": ["React", "Next.js", "UI", "컴포넌트", "프론트엔드"],
+        "primaryAgent": "frontend-scaffold-generator",
+        "mcpTools": ["memory", "filesystem"],
+        "tokenReduction": 60
+      },
+      "backend": {
+        "keywords": ["API", "서버", "백엔드", "REST", "GraphQL"],
+        "primaryAgent": "backend-code-generator",
+        "mcpTools": ["memory", "supabase"],
+        "tokenReduction": 60
+      },
+      "python": {
+        "keywords": ["Python", "Django", "FastAPI", "Flask"],
+        "primaryAgent": "python-expert",
+        "mcpTools": ["memory"],
+        "tokenReduction": 60
+      },
+      "database": {
+        "keywords": ["데이터베이스", "스키마", "ERD", "테이블"],
+        "primaryAgent": "database-architect",
+        "mcpTools": ["memory", "supabase"],
+        "tokenReduction": 60
+      },
+      "testing": {
+        "keywords": ["테스트", "검증", "배포", "품질"],
+        "primaryAgent": "verification-agent",
+        "mcpTools": ["memory", "playwright"],
+        "tokenReduction": 60
+      }
+    },
+    "complexTasks": {
+      "userAuth": {
+        "keywords": ["사용자", "인증", "로그인", "회원가입"],
+        "primaryAgent": "backend-code-generator",
+        "secondaryAgent": "database-architect",
+        "mcpTools": ["memory", "supabase"],
+        "tokenReduction": 40
+      },
+      "uiImprovement": {
+        "keywords": ["UI", "UX", "가독성", "접근성", "디자인"],
+        "primaryAgent": "frontend-scaffold-generator",
+        "secondaryAgent": "ui-ux-validator-agent",
+        "mcpTools": ["memory", "filesystem"],
+        "tokenReduction": 40
+      },
+      "performance": {
+        "keywords": ["성능", "최적화", "속도", "로딩"],
+        "primaryAgent": "senior-code-reviewer",
+        "secondaryAgent": "verification-agent",
+        "mcpTools": ["memory", "chrome-devtools"],
+        "tokenReduction": 40
+      },
+      "newFeature": {
+        "keywords": ["새", "기능", "개발", "구현"],
+        "primaryAgent": "system-architect",
+        "secondaryAgent": "backend-code-generator",
+        "mcpTools": ["memory", "task-master-ai"],
+        "tokenReduction": 40
+      }
+    },
+    "urgentTasks": {
+      "loginError": {
+        "keywords": ["로그인", "버튼", "오류", "작동하지"],
+        "diagnosticTool": "chrome-devtools",
+        "primaryAgent": "senior-code-reviewer",
+        "solutionAgent": "frontend-scaffold-generator",
+        "mcpTools": ["memory", "chrome-devtools"],
+        "tokenReduction": 30
+      },
+      "apiDelay": {
+        "keywords": ["API", "응답", "지연", "느려"],
+        "diagnosticTool": "chrome-devtools",
+        "primaryAgent": "backend-code-generator",
+        "solutionAgent": "verification-agent",
+        "mcpTools": ["memory", "chrome-devtools"],
+        "tokenReduction": 30
+      },
+      "dbConnection": {
+        "keywords": ["데이터베이스", "연결", "실패", "오류"],
+        "diagnosticTool": "supabase",
+        "primaryAgent": "database-connection-agent",
+        "solutionAgent": "database-architect",
+        "mcpTools": ["memory", "supabase"],
+        "tokenReduction": 30
+      },
+      "performanceIssue": {
+        "keywords": ["성능", "문제", "느려", "최적화"],
+        "diagnosticTool": "chrome-devtools",
+        "primaryAgent": "senior-code-reviewer",
+        "solutionAgent": "verification-agent",
+        "mcpTools": ["memory", "chrome-devtools"],
+        "tokenReduction": 30
+      }
+    }
+  },
+  "executionRules": {
+    "autoDetection": {
+      "enabled": true,
+      "keywordAnalysis": true,
+      "complexityAssessment": true,
+      "workflowSelection": "automatic"
+    },
+    "tokenOptimization": {
+      "enabled": true,
+      "contextMinimization": true,
+      "memoryUtilization": true,
+      "toolSelectiveUsage": true
+    },
+    "qualityAssurance": {
+      "enabled": true,
+      "resultValidation": true,
+      "userFeedback": true,
+      "continuousImprovement": true
+    }
+  }
+}

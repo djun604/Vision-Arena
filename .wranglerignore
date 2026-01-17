@@ -1,0 +1,114 @@
+# ==========================================
+# Cloudflare Pages 배포 제외 목록
+# ==========================================
+
+# Node modules - 절대 배포에 포함되면 안 됨
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Git 관련
+.git/
+.gitignore
+.gitattributes
+.gitkeep
+
+# Next.js 빌드 디렉토리 및 캐시 (Cloudflare가 자체 빌드)
+.next/
+.next/**
+out/
+dist/
+build/
+
+# 문서 및 규칙 파일들
+docs/
+docs/**
+rules/
+rules/**
+*.md
+!README.md
+
+# Cursor 설정
+.cursor/
+.cursor/**
+.cursorrules
+
+# Playwright 및 테스트 관련 (스크린샷 디렉토리만 제외)
+.playwright-mcp/
+.playwright-mcp/**
+
+# 개발 및 테스트 파일
+*.test.ts
+*.test.tsx
+*.test.js
+*.test.jsx
+*.spec.ts
+*.spec.tsx
+*.spec.js
+*.spec.jsx
+test.html
+__tests__/
+__mocks__/
+coverage/
+
+# 환경 변수 및 설정 파일
+.env*
+!.env.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local
+
+# 개발 스크립트
+*.sh
+*.command
+dev.sh
+build.sh
+start.sh
+setup.sh
+run.command
+
+# 로그 파일
+*.log
+logs/
+*.log.*
+
+# 캐시 및 임시 파일
+.cache/
+*.cache
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 스크린샷 파일 제외 (public/ 디렉토리는 포함됨)
+스크린샷*.png
+
+# IDE 설정
+.vscode/
+.idea/
+*.sublime-*
+*.code-workspace
+
+# 기타 개발 도구
+.eslintcache
+.stylelintcache
+.eslintrc*
+.prettierrc*
+.editorconfig
+
+# 백업 파일
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+
+# 기타 불필요한 파일
+*.map
+*.d.ts.map
+tsconfig.tsbuildinfo
