@@ -1,6 +1,0 @@
-# Cloudflare Pages Next.js 배포 설정
-# 이 파일은 참고용이며, Cloudflare Pages는 Next.js를 자동으로 감지합니다.
-
-name = "vision-arena"
-compatibility_date = "2026-01-17"
-
