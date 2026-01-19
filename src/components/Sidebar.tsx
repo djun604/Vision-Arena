@@ -23,13 +23,18 @@ const Sidebar = () => {
       overflowY: 'auto',
     }}>
       {/* 로고 영역 */}
-      <div style={{ 
-        height: '56px',
-        padding: '0 1.5rem', 
-        display: 'flex', 
-        alignItems: 'center', 
-        gap: '0.75rem',
-      }}>
+      <Link
+        href="/"
+        style={{ 
+          height: '56px',
+          padding: '0 1.5rem', 
+          display: 'flex', 
+          alignItems: 'center', 
+          gap: '0.75rem',
+          textDecoration: 'none',
+          color: 'inherit',
+        }}
+      >
         <Image
           src="/logo.png"
           alt="Logo"
@@ -49,7 +54,7 @@ const Sidebar = () => {
         }}>
           Vision Arena
         </span>
-      </div>
+      </Link>
 
       {/* 메인 네비게이션 */}
       <nav style={{ flex: 1, padding: '0 0.75rem' }}>
