@@ -311,25 +311,22 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <button
+            <Link
+              href="/cookies"
               style={{
                 display: 'block',
-                width: '100%',
-                textAlign: 'left',
                 padding: '0.5rem 0.75rem',
-                background: 'none',
-                border: 'none',
+                textDecoration: 'none',
                 color: '#6b7280',
                 fontSize: '0.8125rem',
                 fontWeight: '400',
-                cursor: 'pointer',
                 transition: 'color 0.15s ease-in-out',
               }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#374151'}
               onMouseLeave={(e) => e.currentTarget.style.color = '#6b7280'}
             >
               Cookies
-            </button>
+            </Link>
           </li>
         </ul>
       </div>
