@@ -41,10 +41,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" style={{ 
+      margin: 0,
+      padding: 0,
+      height: '100%',
+      overflow: 'hidden', // html 스크롤 비활성화
+    }}>
       <body className={inter.className} style={{ 
         margin: 0,
         padding: 0,
+        height: '100%',
         backgroundColor: '#ffffff',
         overflow: 'hidden', // body 스크롤 비활성화
       }}>
@@ -78,6 +84,7 @@ export default function RootLayout({
           padding: '2rem',
           overflowY: 'auto',
           overflowX: 'hidden',
+          zIndex: 1,
         }}>
           {children}
         </main>

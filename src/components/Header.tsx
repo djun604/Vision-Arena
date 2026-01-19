@@ -20,9 +20,15 @@ const Header = () => {
 
   return (
     <header style={{
+      position: 'fixed',
+      top: 0,
+      left: '260px',
+      right: 0,
       backgroundColor: '#ffffff',
       borderBottom: '1px solid #e5e7eb',
       padding: '0',
+      zIndex: 1000,
+      height: '40px',
     }}>
       <nav style={{
         display: 'flex',

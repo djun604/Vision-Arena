@@ -9,13 +9,18 @@ const Sidebar = () => {
 
   return (
     <aside style={{
+      position: 'fixed',
+      left: 0,
+      top: 0,
       width: '260px',
-      minHeight: '100vh',
+      height: '100vh',
       backgroundColor: '#ffffff',
       borderRight: '1px solid #e5e7eb',
       display: 'flex',
       flexDirection: 'column',
       padding: '0',
+      zIndex: 1000,
+      overflowY: 'auto',
     }}>
       {/* 로고 영역 */}
       <div style={{ 
