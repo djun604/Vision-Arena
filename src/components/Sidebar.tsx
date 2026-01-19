@@ -9,13 +9,18 @@ const Sidebar = () => {
 
   return (
     <aside style={{
+      position: 'fixed',
+      left: 0,
+      top: 0,
       width: '260px',
-      minHeight: '100vh',
+      height: '100vh',
       backgroundColor: '#ffffff',
       borderRight: '1px solid #e5e7eb',
       display: 'flex',
       flexDirection: 'column',
       padding: '0',
+      zIndex: 100,
+      overflowY: 'auto',
     }}>
       {/* 로고 영역 */}
       <div style={{ 
@@ -220,7 +225,7 @@ const Sidebar = () => {
                 </svg>
               )}
             </Link>
-            </li>
+          </li>
           <li style={{ marginTop: '1rem', marginBottom: '0.25rem', paddingTop: '1rem', borderTop: '1px solid #e5e7eb' }}>
             <Link
               href="/admin"
@@ -265,6 +270,69 @@ const Sidebar = () => {
           </li>
         </ul>
       </nav>
+
+      {/* 하단 링크 */}
+      <div style={{ padding: '1rem 0.75rem', borderTop: '1px solid #e5e7eb' }}>
+        <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+          <li style={{ marginBottom: '0.5rem' }}>
+            <Link
+              href="/terms-of-use"
+              style={{
+                display: 'block',
+                padding: '0.5rem 0.75rem',
+                textDecoration: 'none',
+                color: '#6b7280',
+                fontSize: '0.8125rem',
+                fontWeight: '400',
+                transition: 'color 0.15s ease-in-out',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#374151'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#6b7280'}
+            >
+              Terms of Use
+            </Link>
+          </li>
+          <li style={{ marginBottom: '0.5rem' }}>
+            <Link
+              href="/privacy-policy"
+              style={{
+                display: 'block',
+                padding: '0.5rem 0.75rem',
+                textDecoration: 'none',
+                color: '#6b7280',
+                fontSize: '0.8125rem',
+                fontWeight: '400',
+                transition: 'color 0.15s ease-in-out',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#374151'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#6b7280'}
+            >
+              Privacy Policy
+            </Link>
+          </li>
+          <li>
+            <button
+              style={{
+                display: 'block',
+                width: '100%',
+                textAlign: 'left',
+                padding: '0.5rem 0.75rem',
+                background: 'none',
+                border: 'none',
+                color: '#6b7280',
+                fontSize: '0.8125rem',
+                fontWeight: '400',
+                cursor: 'pointer',
+                transition: 'color 0.15s ease-in-out',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#374151'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#6b7280'}
+            >
+              Cookies
+            </button>
+          </li>
+        </ul>
+      </div>
     </aside>
   );
 };
