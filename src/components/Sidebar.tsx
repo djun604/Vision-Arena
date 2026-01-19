@@ -274,7 +274,7 @@ const Sidebar = () => {
       {/* 하단 링크 */}
       <div style={{ padding: '1rem 0.75rem', borderTop: '1px solid #e5e7eb' }}>
         <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-          <li style={{ marginBottom: '0.5rem' }}>
+          <li style={{ marginBottom: '0.25rem' }}>
             <Link
               href="/terms-of-use"
               style={{
@@ -292,7 +292,7 @@ const Sidebar = () => {
               Terms of Use
             </Link>
           </li>
-          <li style={{ marginBottom: '0.5rem' }}>
+          <li style={{ marginBottom: '0.25rem' }}>
             <Link
               href="/privacy-policy"
               style={{
