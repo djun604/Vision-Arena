@@ -27,8 +27,9 @@ const Header = () => {
       backgroundColor: '#ffffff',
       borderBottom: '1px solid #e5e7eb',
       padding: '0',
-      zIndex: 1000,
+      zIndex: 1001,
       height: '40px',
+      boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
     }}>
       <nav style={{
         display: 'flex',

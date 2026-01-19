@@ -19,7 +19,7 @@ const Sidebar = () => {
       display: 'flex',
       flexDirection: 'column',
       padding: '0',
-      zIndex: 1000,
+      zIndex: 1002,
       overflowY: 'auto',
     }}>
       {/* 로고 영역 */}
